@@ -1,0 +1,10 @@
+{
+  "name": "secure-notes",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend ci && npm --prefix frontend ci",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test": "npm --prefix backend test",
+    "check": "npm --prefix backend run check && npm --prefix frontend run check"
+  }
+}
